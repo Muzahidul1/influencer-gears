@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --primary-color: #E02C6D;
+    --text-dark-900: hsl(0, 0%, 23%);
+    --text-dark-700: hsl(244, 65%, 9%);
+    --text-dark-gray-900: hsl(231, 13%, 11%);
+    --gray-50: hsl(240, 5%, 50%);
+    --gray-30: hsl(203, 4%, 38%);
+
+
+
+    --ft-size-100: .75rem;
+    --ft-size-200: .875rem;
+    --ft-size-300: 1.5rem;
+    --ft-size-500: 1.75rem;
+    --ft-size-700: 2.3rem;
+    --ft-size-900: 3.25rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+.img{
+    width: 100%;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: .75em 1.5em;
+    border: none;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* header style starts */
+
+
+nav{
+    padding: 30px 0;
+}
+
+.desktop{
+    display: none;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.nav-list li{
+    list-style: none;
+}
+
+.nav-list svg{
+    width: 20px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--text-dark-900);
+    font-weight: 700;
+}
+
+
+
+    /* banner style starts */
+
+    .banner{
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .banner p{
+        font-size: var(--ft-size-200);
+        font-weight: 500;
+        margin: 20px 0;
+    }
+
+    .heading{
+        font-size: var(--ft-size-500);
+    }
+
+    .banner .btn{
+        border-radius: 100px;
+        background-color: var(--primary-color);
+        color: white;
+        gap: 10px;
+    }
+
+
+    .banner-img{
+        background-image: url("./images/circle-design.svg");
+        background-position: center;
+        background-size: 100%;
+        padding: 10px 0;
+        background-repeat: no-repeat;
+    }
+
+    /* banner style starts */
+
+
+
+
+/* header style end */
+
+
+/* main style starts */
+
+
+.main-container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.sponsor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor img{
+    width: 50px;
+}
+
+
+/* collection style starts */
+
+.collection{
+    margin: 30px 0;
+}
+
+.collection h2{
+    color: var(--text-dark-900);
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+
+.grid{
+    display: grid;
+    gap: 20px;
+}
+
+
+.cart{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 18px;
+}
+
+.cart img{
+    border-radius: 5px;
+}
+
+.cart h3{
+    font-size: var(--ft-size-500);
+    font-weight: 700;
+    margin-top: 10px;
+    color: var(--text-dark-gray-900);
+}
+
+.price{
+    font-size: var(--ft-size-300);
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.status{
+    margin: 10px 0;
+}
+
+.status span{
+    margin-left: 10px;
+    font-size: var(--ft-size-200);
+    color: var(--gray-30);
+    font-weight: 400;
+}
+
+.description{
+    font-size: var(--ft-size-200);
+    color: var(--gray-50);
+    padding: 10px 0;
+}
+
+
+.see-more{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+.see-more svg{
+    width: 1rem;
+    margin-left: 10px;
+}
+
+.see-more-link{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* collection style end */
+
+
+.feature{
+    text-align: center;
+}
+
+.feature-heading{
+    font-size: var(--ft-size-300);
+    font-weight: 700;
+    color: var(--text-dark-700);
+    padding: 20px 0;
+}
+
+.feature p{
+    font-weight: 700;
+    color: #6C6C6C;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+.feature .btn{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.feature svg{
+    margin-left: 10px;
+}
+
+
+/* main style end */
+
+/* footer style starts */
+
+footer{
+    background: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+footer h2{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.copy-text{
+    font-size: var(--ft-size-100);
+    line-height: 24px;
+    margin: 15px;
+}
+
+
+@media screen and (min-width: 576px) {
+
+    
+   .btn{
+        margin: 0;
+    }
+
+    /* header style starts */
+
+    .mobile{
+        display: none;
+    }
+
+    /* .desktop{
+        display: block;
+    } */
+
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-text{
+        color: var(--text-dark-900);
+        font-size: var(--ft-size-300);
+        font-weight: 700;
+    }
+
+    .nav-list svg{
+        width: 36px;
+    }
+
+    .nav-list a{
+        font-weight: 600;
+    }
+
+
+    /* banner section style */
+
+    .flex{
+        flex-direction: row;
+        gap: 5%;
+    }
+
+    .banner{
+        text-align: left;
+    }
+
+    .heading{
+        font-size: var(--ft-size-900);
+    }
+
+    .banner p{
+        font-size: 1rem;
+    }
+
+    .banner-text{
+        width: 52%;
+    }
+
+    .banner-img{
+        width: 53%;
+    }
+
+    /* header style end */
+
+    /* main style starts */
+
+    main section{
+        margin: 80px 0;
+    }
+
+
+
+    .sponsor img{
+        width: 80px;
+    }
+
+    /* collection style starts */
+
+
+    .collection h2{
+        margin-bottom: 30px;
+    }
+
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .description{
+        padding: 0;
+    }
+
+    /* collection style end */
+
+    .feature-text{
+        width: 60%;
+        text-align: left;
+    }
+
+    .feature-img{
+        width: 35%;
+    }
+
+    .feature-heading{
+        font-size: var(--ft-size-700);
+    }
+    
+
+    /* main style end */
+
+    /* footer style starts */
+
+    footer h2{
+        font-size: var(--ft-size-300);
+    }
+
+    .copy-text{
+        font-size: var(--ft-size-200);
+    }
+
+    footer svg{
+        width: 32px;
+    }
+}
